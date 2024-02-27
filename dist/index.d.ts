@@ -36707,173 +36707,6 @@ type Scalars$1 = {
     BigDecimal: string;
     BigInt: string;
     Bytes: string;
-    Int8: any;
-};
-type AmpUpdate_Filter = {
-    /** Filter for the block changed event. */
-    _change_block?: InputMaybe$1<BlockChangedFilter$1>;
-    and?: InputMaybe$1<Array<InputMaybe$1<AmpUpdate_Filter>>>;
-    endAmp?: InputMaybe$1<Scalars$1['BigInt']>;
-    endAmp_gt?: InputMaybe$1<Scalars$1['BigInt']>;
-    endAmp_gte?: InputMaybe$1<Scalars$1['BigInt']>;
-    endAmp_in?: InputMaybe$1<Array<Scalars$1['BigInt']>>;
-    endAmp_lt?: InputMaybe$1<Scalars$1['BigInt']>;
-    endAmp_lte?: InputMaybe$1<Scalars$1['BigInt']>;
-    endAmp_not?: InputMaybe$1<Scalars$1['BigInt']>;
-    endAmp_not_in?: InputMaybe$1<Array<Scalars$1['BigInt']>>;
-    endTimestamp?: InputMaybe$1<Scalars$1['BigInt']>;
-    endTimestamp_gt?: InputMaybe$1<Scalars$1['BigInt']>;
-    endTimestamp_gte?: InputMaybe$1<Scalars$1['BigInt']>;
-    endTimestamp_in?: InputMaybe$1<Array<Scalars$1['BigInt']>>;
-    endTimestamp_lt?: InputMaybe$1<Scalars$1['BigInt']>;
-    endTimestamp_lte?: InputMaybe$1<Scalars$1['BigInt']>;
-    endTimestamp_not?: InputMaybe$1<Scalars$1['BigInt']>;
-    endTimestamp_not_in?: InputMaybe$1<Array<Scalars$1['BigInt']>>;
-    id?: InputMaybe$1<Scalars$1['ID']>;
-    id_gt?: InputMaybe$1<Scalars$1['ID']>;
-    id_gte?: InputMaybe$1<Scalars$1['ID']>;
-    id_in?: InputMaybe$1<Array<Scalars$1['ID']>>;
-    id_lt?: InputMaybe$1<Scalars$1['ID']>;
-    id_lte?: InputMaybe$1<Scalars$1['ID']>;
-    id_not?: InputMaybe$1<Scalars$1['ID']>;
-    id_not_in?: InputMaybe$1<Array<Scalars$1['ID']>>;
-    or?: InputMaybe$1<Array<InputMaybe$1<AmpUpdate_Filter>>>;
-    poolId?: InputMaybe$1<Scalars$1['String']>;
-    poolId_?: InputMaybe$1<Pool_Filter$1>;
-    poolId_contains?: InputMaybe$1<Scalars$1['String']>;
-    poolId_contains_nocase?: InputMaybe$1<Scalars$1['String']>;
-    poolId_ends_with?: InputMaybe$1<Scalars$1['String']>;
-    poolId_ends_with_nocase?: InputMaybe$1<Scalars$1['String']>;
-    poolId_gt?: InputMaybe$1<Scalars$1['String']>;
-    poolId_gte?: InputMaybe$1<Scalars$1['String']>;
-    poolId_in?: InputMaybe$1<Array<Scalars$1['String']>>;
-    poolId_lt?: InputMaybe$1<Scalars$1['String']>;
-    poolId_lte?: InputMaybe$1<Scalars$1['String']>;
-    poolId_not?: InputMaybe$1<Scalars$1['String']>;
-    poolId_not_contains?: InputMaybe$1<Scalars$1['String']>;
-    poolId_not_contains_nocase?: InputMaybe$1<Scalars$1['String']>;
-    poolId_not_ends_with?: InputMaybe$1<Scalars$1['String']>;
-    poolId_not_ends_with_nocase?: InputMaybe$1<Scalars$1['String']>;
-    poolId_not_in?: InputMaybe$1<Array<Scalars$1['String']>>;
-    poolId_not_starts_with?: InputMaybe$1<Scalars$1['String']>;
-    poolId_not_starts_with_nocase?: InputMaybe$1<Scalars$1['String']>;
-    poolId_starts_with?: InputMaybe$1<Scalars$1['String']>;
-    poolId_starts_with_nocase?: InputMaybe$1<Scalars$1['String']>;
-    scheduledTimestamp?: InputMaybe$1<Scalars$1['Int']>;
-    scheduledTimestamp_gt?: InputMaybe$1<Scalars$1['Int']>;
-    scheduledTimestamp_gte?: InputMaybe$1<Scalars$1['Int']>;
-    scheduledTimestamp_in?: InputMaybe$1<Array<Scalars$1['Int']>>;
-    scheduledTimestamp_lt?: InputMaybe$1<Scalars$1['Int']>;
-    scheduledTimestamp_lte?: InputMaybe$1<Scalars$1['Int']>;
-    scheduledTimestamp_not?: InputMaybe$1<Scalars$1['Int']>;
-    scheduledTimestamp_not_in?: InputMaybe$1<Array<Scalars$1['Int']>>;
-    startAmp?: InputMaybe$1<Scalars$1['BigInt']>;
-    startAmp_gt?: InputMaybe$1<Scalars$1['BigInt']>;
-    startAmp_gte?: InputMaybe$1<Scalars$1['BigInt']>;
-    startAmp_in?: InputMaybe$1<Array<Scalars$1['BigInt']>>;
-    startAmp_lt?: InputMaybe$1<Scalars$1['BigInt']>;
-    startAmp_lte?: InputMaybe$1<Scalars$1['BigInt']>;
-    startAmp_not?: InputMaybe$1<Scalars$1['BigInt']>;
-    startAmp_not_in?: InputMaybe$1<Array<Scalars$1['BigInt']>>;
-    startTimestamp?: InputMaybe$1<Scalars$1['BigInt']>;
-    startTimestamp_gt?: InputMaybe$1<Scalars$1['BigInt']>;
-    startTimestamp_gte?: InputMaybe$1<Scalars$1['BigInt']>;
-    startTimestamp_in?: InputMaybe$1<Array<Scalars$1['BigInt']>>;
-    startTimestamp_lt?: InputMaybe$1<Scalars$1['BigInt']>;
-    startTimestamp_lte?: InputMaybe$1<Scalars$1['BigInt']>;
-    startTimestamp_not?: InputMaybe$1<Scalars$1['BigInt']>;
-    startTimestamp_not_in?: InputMaybe$1<Array<Scalars$1['BigInt']>>;
-};
-type BalancerSnapshot_Filter = {
-    /** Filter for the block changed event. */
-    _change_block?: InputMaybe$1<BlockChangedFilter$1>;
-    and?: InputMaybe$1<Array<InputMaybe$1<BalancerSnapshot_Filter>>>;
-    id?: InputMaybe$1<Scalars$1['ID']>;
-    id_gt?: InputMaybe$1<Scalars$1['ID']>;
-    id_gte?: InputMaybe$1<Scalars$1['ID']>;
-    id_in?: InputMaybe$1<Array<Scalars$1['ID']>>;
-    id_lt?: InputMaybe$1<Scalars$1['ID']>;
-    id_lte?: InputMaybe$1<Scalars$1['ID']>;
-    id_not?: InputMaybe$1<Scalars$1['ID']>;
-    id_not_in?: InputMaybe$1<Array<Scalars$1['ID']>>;
-    or?: InputMaybe$1<Array<InputMaybe$1<BalancerSnapshot_Filter>>>;
-    poolCount?: InputMaybe$1<Scalars$1['Int']>;
-    poolCount_gt?: InputMaybe$1<Scalars$1['Int']>;
-    poolCount_gte?: InputMaybe$1<Scalars$1['Int']>;
-    poolCount_in?: InputMaybe$1<Array<Scalars$1['Int']>>;
-    poolCount_lt?: InputMaybe$1<Scalars$1['Int']>;
-    poolCount_lte?: InputMaybe$1<Scalars$1['Int']>;
-    poolCount_not?: InputMaybe$1<Scalars$1['Int']>;
-    poolCount_not_in?: InputMaybe$1<Array<Scalars$1['Int']>>;
-    timestamp?: InputMaybe$1<Scalars$1['Int']>;
-    timestamp_gt?: InputMaybe$1<Scalars$1['Int']>;
-    timestamp_gte?: InputMaybe$1<Scalars$1['Int']>;
-    timestamp_in?: InputMaybe$1<Array<Scalars$1['Int']>>;
-    timestamp_lt?: InputMaybe$1<Scalars$1['Int']>;
-    timestamp_lte?: InputMaybe$1<Scalars$1['Int']>;
-    timestamp_not?: InputMaybe$1<Scalars$1['Int']>;
-    timestamp_not_in?: InputMaybe$1<Array<Scalars$1['Int']>>;
-    totalLiquidity?: InputMaybe$1<Scalars$1['BigDecimal']>;
-    totalLiquidity_gt?: InputMaybe$1<Scalars$1['BigDecimal']>;
-    totalLiquidity_gte?: InputMaybe$1<Scalars$1['BigDecimal']>;
-    totalLiquidity_in?: InputMaybe$1<Array<Scalars$1['BigDecimal']>>;
-    totalLiquidity_lt?: InputMaybe$1<Scalars$1['BigDecimal']>;
-    totalLiquidity_lte?: InputMaybe$1<Scalars$1['BigDecimal']>;
-    totalLiquidity_not?: InputMaybe$1<Scalars$1['BigDecimal']>;
-    totalLiquidity_not_in?: InputMaybe$1<Array<Scalars$1['BigDecimal']>>;
-    totalProtocolFee?: InputMaybe$1<Scalars$1['BigDecimal']>;
-    totalProtocolFee_gt?: InputMaybe$1<Scalars$1['BigDecimal']>;
-    totalProtocolFee_gte?: InputMaybe$1<Scalars$1['BigDecimal']>;
-    totalProtocolFee_in?: InputMaybe$1<Array<Scalars$1['BigDecimal']>>;
-    totalProtocolFee_lt?: InputMaybe$1<Scalars$1['BigDecimal']>;
-    totalProtocolFee_lte?: InputMaybe$1<Scalars$1['BigDecimal']>;
-    totalProtocolFee_not?: InputMaybe$1<Scalars$1['BigDecimal']>;
-    totalProtocolFee_not_in?: InputMaybe$1<Array<Scalars$1['BigDecimal']>>;
-    totalSwapCount?: InputMaybe$1<Scalars$1['BigInt']>;
-    totalSwapCount_gt?: InputMaybe$1<Scalars$1['BigInt']>;
-    totalSwapCount_gte?: InputMaybe$1<Scalars$1['BigInt']>;
-    totalSwapCount_in?: InputMaybe$1<Array<Scalars$1['BigInt']>>;
-    totalSwapCount_lt?: InputMaybe$1<Scalars$1['BigInt']>;
-    totalSwapCount_lte?: InputMaybe$1<Scalars$1['BigInt']>;
-    totalSwapCount_not?: InputMaybe$1<Scalars$1['BigInt']>;
-    totalSwapCount_not_in?: InputMaybe$1<Array<Scalars$1['BigInt']>>;
-    totalSwapFee?: InputMaybe$1<Scalars$1['BigDecimal']>;
-    totalSwapFee_gt?: InputMaybe$1<Scalars$1['BigDecimal']>;
-    totalSwapFee_gte?: InputMaybe$1<Scalars$1['BigDecimal']>;
-    totalSwapFee_in?: InputMaybe$1<Array<Scalars$1['BigDecimal']>>;
-    totalSwapFee_lt?: InputMaybe$1<Scalars$1['BigDecimal']>;
-    totalSwapFee_lte?: InputMaybe$1<Scalars$1['BigDecimal']>;
-    totalSwapFee_not?: InputMaybe$1<Scalars$1['BigDecimal']>;
-    totalSwapFee_not_in?: InputMaybe$1<Array<Scalars$1['BigDecimal']>>;
-    totalSwapVolume?: InputMaybe$1<Scalars$1['BigDecimal']>;
-    totalSwapVolume_gt?: InputMaybe$1<Scalars$1['BigDecimal']>;
-    totalSwapVolume_gte?: InputMaybe$1<Scalars$1['BigDecimal']>;
-    totalSwapVolume_in?: InputMaybe$1<Array<Scalars$1['BigDecimal']>>;
-    totalSwapVolume_lt?: InputMaybe$1<Scalars$1['BigDecimal']>;
-    totalSwapVolume_lte?: InputMaybe$1<Scalars$1['BigDecimal']>;
-    totalSwapVolume_not?: InputMaybe$1<Scalars$1['BigDecimal']>;
-    totalSwapVolume_not_in?: InputMaybe$1<Array<Scalars$1['BigDecimal']>>;
-    vault?: InputMaybe$1<Scalars$1['String']>;
-    vault_?: InputMaybe$1<Balancer_Filter>;
-    vault_contains?: InputMaybe$1<Scalars$1['String']>;
-    vault_contains_nocase?: InputMaybe$1<Scalars$1['String']>;
-    vault_ends_with?: InputMaybe$1<Scalars$1['String']>;
-    vault_ends_with_nocase?: InputMaybe$1<Scalars$1['String']>;
-    vault_gt?: InputMaybe$1<Scalars$1['String']>;
-    vault_gte?: InputMaybe$1<Scalars$1['String']>;
-    vault_in?: InputMaybe$1<Array<Scalars$1['String']>>;
-    vault_lt?: InputMaybe$1<Scalars$1['String']>;
-    vault_lte?: InputMaybe$1<Scalars$1['String']>;
-    vault_not?: InputMaybe$1<Scalars$1['String']>;
-    vault_not_contains?: InputMaybe$1<Scalars$1['String']>;
-    vault_not_contains_nocase?: InputMaybe$1<Scalars$1['String']>;
-    vault_not_ends_with?: InputMaybe$1<Scalars$1['String']>;
-    vault_not_ends_with_nocase?: InputMaybe$1<Scalars$1['String']>;
-    vault_not_in?: InputMaybe$1<Array<Scalars$1['String']>>;
-    vault_not_starts_with?: InputMaybe$1<Scalars$1['String']>;
-    vault_not_starts_with_nocase?: InputMaybe$1<Scalars$1['String']>;
-    vault_starts_with?: InputMaybe$1<Scalars$1['String']>;
-    vault_starts_with_nocase?: InputMaybe$1<Scalars$1['String']>;
 };
 type Balancer_Filter = {
     /** Filter for the block changed event. */
@@ -36897,17 +36730,6 @@ type Balancer_Filter = {
     poolCount_not?: InputMaybe$1<Scalars$1['Int']>;
     poolCount_not_in?: InputMaybe$1<Array<Scalars$1['Int']>>;
     pools_?: InputMaybe$1<Pool_Filter$1>;
-    protocolFeesCollector?: InputMaybe$1<Scalars$1['Bytes']>;
-    protocolFeesCollector_contains?: InputMaybe$1<Scalars$1['Bytes']>;
-    protocolFeesCollector_gt?: InputMaybe$1<Scalars$1['Bytes']>;
-    protocolFeesCollector_gte?: InputMaybe$1<Scalars$1['Bytes']>;
-    protocolFeesCollector_in?: InputMaybe$1<Array<Scalars$1['Bytes']>>;
-    protocolFeesCollector_lt?: InputMaybe$1<Scalars$1['Bytes']>;
-    protocolFeesCollector_lte?: InputMaybe$1<Scalars$1['Bytes']>;
-    protocolFeesCollector_not?: InputMaybe$1<Scalars$1['Bytes']>;
-    protocolFeesCollector_not_contains?: InputMaybe$1<Scalars$1['Bytes']>;
-    protocolFeesCollector_not_in?: InputMaybe$1<Array<Scalars$1['Bytes']>>;
-    snapshots_?: InputMaybe$1<BalancerSnapshot_Filter>;
     totalLiquidity?: InputMaybe$1<Scalars$1['BigDecimal']>;
     totalLiquidity_gt?: InputMaybe$1<Scalars$1['BigDecimal']>;
     totalLiquidity_gte?: InputMaybe$1<Scalars$1['BigDecimal']>;
@@ -36916,14 +36738,6 @@ type Balancer_Filter = {
     totalLiquidity_lte?: InputMaybe$1<Scalars$1['BigDecimal']>;
     totalLiquidity_not?: InputMaybe$1<Scalars$1['BigDecimal']>;
     totalLiquidity_not_in?: InputMaybe$1<Array<Scalars$1['BigDecimal']>>;
-    totalProtocolFee?: InputMaybe$1<Scalars$1['BigDecimal']>;
-    totalProtocolFee_gt?: InputMaybe$1<Scalars$1['BigDecimal']>;
-    totalProtocolFee_gte?: InputMaybe$1<Scalars$1['BigDecimal']>;
-    totalProtocolFee_in?: InputMaybe$1<Array<Scalars$1['BigDecimal']>>;
-    totalProtocolFee_lt?: InputMaybe$1<Scalars$1['BigDecimal']>;
-    totalProtocolFee_lte?: InputMaybe$1<Scalars$1['BigDecimal']>;
-    totalProtocolFee_not?: InputMaybe$1<Scalars$1['BigDecimal']>;
-    totalProtocolFee_not_in?: InputMaybe$1<Array<Scalars$1['BigDecimal']>>;
     totalSwapCount?: InputMaybe$1<Scalars$1['BigInt']>;
     totalSwapCount_gt?: InputMaybe$1<Scalars$1['BigInt']>;
     totalSwapCount_gte?: InputMaybe$1<Scalars$1['BigInt']>;
@@ -36953,10 +36767,7 @@ declare enum Balancer_OrderBy {
     Id = "id",
     PoolCount = "poolCount",
     Pools = "pools",
-    ProtocolFeesCollector = "protocolFeesCollector",
-    Snapshots = "snapshots",
     TotalLiquidity = "totalLiquidity",
-    TotalProtocolFee = "totalProtocolFee",
     TotalSwapCount = "totalSwapCount",
     TotalSwapFee = "totalSwapFee",
     TotalSwapVolume = "totalSwapVolume"
@@ -36968,86 +36779,6 @@ type Block_Height$1 = {
     hash?: InputMaybe$1<Scalars$1['Bytes']>;
     number?: InputMaybe$1<Scalars$1['Int']>;
     number_gte?: InputMaybe$1<Scalars$1['Int']>;
-};
-type CircuitBreaker_Filter = {
-    /** Filter for the block changed event. */
-    _change_block?: InputMaybe$1<BlockChangedFilter$1>;
-    and?: InputMaybe$1<Array<InputMaybe$1<CircuitBreaker_Filter>>>;
-    bptPrice?: InputMaybe$1<Scalars$1['BigDecimal']>;
-    bptPrice_gt?: InputMaybe$1<Scalars$1['BigDecimal']>;
-    bptPrice_gte?: InputMaybe$1<Scalars$1['BigDecimal']>;
-    bptPrice_in?: InputMaybe$1<Array<Scalars$1['BigDecimal']>>;
-    bptPrice_lt?: InputMaybe$1<Scalars$1['BigDecimal']>;
-    bptPrice_lte?: InputMaybe$1<Scalars$1['BigDecimal']>;
-    bptPrice_not?: InputMaybe$1<Scalars$1['BigDecimal']>;
-    bptPrice_not_in?: InputMaybe$1<Array<Scalars$1['BigDecimal']>>;
-    id?: InputMaybe$1<Scalars$1['ID']>;
-    id_gt?: InputMaybe$1<Scalars$1['ID']>;
-    id_gte?: InputMaybe$1<Scalars$1['ID']>;
-    id_in?: InputMaybe$1<Array<Scalars$1['ID']>>;
-    id_lt?: InputMaybe$1<Scalars$1['ID']>;
-    id_lte?: InputMaybe$1<Scalars$1['ID']>;
-    id_not?: InputMaybe$1<Scalars$1['ID']>;
-    id_not_in?: InputMaybe$1<Array<Scalars$1['ID']>>;
-    lowerBoundPercentage?: InputMaybe$1<Scalars$1['BigDecimal']>;
-    lowerBoundPercentage_gt?: InputMaybe$1<Scalars$1['BigDecimal']>;
-    lowerBoundPercentage_gte?: InputMaybe$1<Scalars$1['BigDecimal']>;
-    lowerBoundPercentage_in?: InputMaybe$1<Array<Scalars$1['BigDecimal']>>;
-    lowerBoundPercentage_lt?: InputMaybe$1<Scalars$1['BigDecimal']>;
-    lowerBoundPercentage_lte?: InputMaybe$1<Scalars$1['BigDecimal']>;
-    lowerBoundPercentage_not?: InputMaybe$1<Scalars$1['BigDecimal']>;
-    lowerBoundPercentage_not_in?: InputMaybe$1<Array<Scalars$1['BigDecimal']>>;
-    or?: InputMaybe$1<Array<InputMaybe$1<CircuitBreaker_Filter>>>;
-    pool?: InputMaybe$1<Scalars$1['String']>;
-    pool_?: InputMaybe$1<Pool_Filter$1>;
-    pool_contains?: InputMaybe$1<Scalars$1['String']>;
-    pool_contains_nocase?: InputMaybe$1<Scalars$1['String']>;
-    pool_ends_with?: InputMaybe$1<Scalars$1['String']>;
-    pool_ends_with_nocase?: InputMaybe$1<Scalars$1['String']>;
-    pool_gt?: InputMaybe$1<Scalars$1['String']>;
-    pool_gte?: InputMaybe$1<Scalars$1['String']>;
-    pool_in?: InputMaybe$1<Array<Scalars$1['String']>>;
-    pool_lt?: InputMaybe$1<Scalars$1['String']>;
-    pool_lte?: InputMaybe$1<Scalars$1['String']>;
-    pool_not?: InputMaybe$1<Scalars$1['String']>;
-    pool_not_contains?: InputMaybe$1<Scalars$1['String']>;
-    pool_not_contains_nocase?: InputMaybe$1<Scalars$1['String']>;
-    pool_not_ends_with?: InputMaybe$1<Scalars$1['String']>;
-    pool_not_ends_with_nocase?: InputMaybe$1<Scalars$1['String']>;
-    pool_not_in?: InputMaybe$1<Array<Scalars$1['String']>>;
-    pool_not_starts_with?: InputMaybe$1<Scalars$1['String']>;
-    pool_not_starts_with_nocase?: InputMaybe$1<Scalars$1['String']>;
-    pool_starts_with?: InputMaybe$1<Scalars$1['String']>;
-    pool_starts_with_nocase?: InputMaybe$1<Scalars$1['String']>;
-    token?: InputMaybe$1<Scalars$1['String']>;
-    token_?: InputMaybe$1<PoolToken_Filter>;
-    token_contains?: InputMaybe$1<Scalars$1['String']>;
-    token_contains_nocase?: InputMaybe$1<Scalars$1['String']>;
-    token_ends_with?: InputMaybe$1<Scalars$1['String']>;
-    token_ends_with_nocase?: InputMaybe$1<Scalars$1['String']>;
-    token_gt?: InputMaybe$1<Scalars$1['String']>;
-    token_gte?: InputMaybe$1<Scalars$1['String']>;
-    token_in?: InputMaybe$1<Array<Scalars$1['String']>>;
-    token_lt?: InputMaybe$1<Scalars$1['String']>;
-    token_lte?: InputMaybe$1<Scalars$1['String']>;
-    token_not?: InputMaybe$1<Scalars$1['String']>;
-    token_not_contains?: InputMaybe$1<Scalars$1['String']>;
-    token_not_contains_nocase?: InputMaybe$1<Scalars$1['String']>;
-    token_not_ends_with?: InputMaybe$1<Scalars$1['String']>;
-    token_not_ends_with_nocase?: InputMaybe$1<Scalars$1['String']>;
-    token_not_in?: InputMaybe$1<Array<Scalars$1['String']>>;
-    token_not_starts_with?: InputMaybe$1<Scalars$1['String']>;
-    token_not_starts_with_nocase?: InputMaybe$1<Scalars$1['String']>;
-    token_starts_with?: InputMaybe$1<Scalars$1['String']>;
-    token_starts_with_nocase?: InputMaybe$1<Scalars$1['String']>;
-    upperBoundPercentage?: InputMaybe$1<Scalars$1['BigDecimal']>;
-    upperBoundPercentage_gt?: InputMaybe$1<Scalars$1['BigDecimal']>;
-    upperBoundPercentage_gte?: InputMaybe$1<Scalars$1['BigDecimal']>;
-    upperBoundPercentage_in?: InputMaybe$1<Array<Scalars$1['BigDecimal']>>;
-    upperBoundPercentage_lt?: InputMaybe$1<Scalars$1['BigDecimal']>;
-    upperBoundPercentage_lte?: InputMaybe$1<Scalars$1['BigDecimal']>;
-    upperBoundPercentage_not?: InputMaybe$1<Scalars$1['BigDecimal']>;
-    upperBoundPercentage_not_in?: InputMaybe$1<Array<Scalars$1['BigDecimal']>>;
 };
 type GradualWeightUpdate_Filter = {
     /** Filter for the block changed event. */
@@ -37134,14 +36865,6 @@ type JoinExit_Filter = {
     amounts_not_contains?: InputMaybe$1<Array<Scalars$1['BigDecimal']>>;
     amounts_not_contains_nocase?: InputMaybe$1<Array<Scalars$1['BigDecimal']>>;
     and?: InputMaybe$1<Array<InputMaybe$1<JoinExit_Filter>>>;
-    block?: InputMaybe$1<Scalars$1['BigInt']>;
-    block_gt?: InputMaybe$1<Scalars$1['BigInt']>;
-    block_gte?: InputMaybe$1<Scalars$1['BigInt']>;
-    block_in?: InputMaybe$1<Array<Scalars$1['BigInt']>>;
-    block_lt?: InputMaybe$1<Scalars$1['BigInt']>;
-    block_lte?: InputMaybe$1<Scalars$1['BigInt']>;
-    block_not?: InputMaybe$1<Scalars$1['BigInt']>;
-    block_not_in?: InputMaybe$1<Array<Scalars$1['BigInt']>>;
     id?: InputMaybe$1<Scalars$1['ID']>;
     id_gt?: InputMaybe$1<Scalars$1['ID']>;
     id_gte?: InputMaybe$1<Scalars$1['ID']>;
@@ -37236,7 +36959,6 @@ type JoinExit_Filter = {
 };
 declare enum JoinExit_OrderBy {
     Amounts = "amounts",
-    Block = "block",
     Id = "id",
     Pool = "pool",
     PoolAddress = "pool__address",
@@ -37255,15 +36977,11 @@ declare enum JoinExit_OrderBy {
     PoolId = "pool__id",
     PoolIsInRecoveryMode = "pool__isInRecoveryMode",
     PoolIsPaused = "pool__isPaused",
-    PoolJoinExitEnabled = "pool__joinExitEnabled",
     PoolLambda = "pool__lambda",
-    PoolLastJoinExitAmp = "pool__lastJoinExitAmp",
     PoolLastPostJoinExitInvariant = "pool__lastPostJoinExitInvariant",
     PoolLowerTarget = "pool__lowerTarget",
     PoolMainIndex = "pool__mainIndex",
-    PoolManagementAumFee = "pool__managementAumFee",
     PoolManagementFee = "pool__managementFee",
-    PoolMustAllowlistLPs = "pool__mustAllowlistLPs",
     PoolName = "pool__name",
     PoolOracleEnabled = "pool__oracleEnabled",
     PoolOwner = "pool__owner",
@@ -37280,8 +36998,6 @@ declare enum JoinExit_OrderBy {
     PoolSqrtBeta = "pool__sqrtBeta",
     PoolStrategyType = "pool__strategyType",
     PoolSwapEnabled = "pool__swapEnabled",
-    PoolSwapEnabledCurationSignal = "pool__swapEnabledCurationSignal",
-    PoolSwapEnabledInternal = "pool__swapEnabledInternal",
     PoolSwapFee = "pool__swapFee",
     PoolSwapsCount = "pool__swapsCount",
     PoolSymbol = "pool__symbol",
@@ -37289,11 +37005,7 @@ declare enum JoinExit_OrderBy {
     PoolTauAlphaY = "pool__tauAlphaY",
     PoolTauBetaX = "pool__tauBetaX",
     PoolTauBetaY = "pool__tauBetaY",
-    PoolTotalAumFeeCollectedInBpt = "pool__totalAumFeeCollectedInBPT",
     PoolTotalLiquidity = "pool__totalLiquidity",
-    PoolTotalLiquiditySansBpt = "pool__totalLiquiditySansBPT",
-    PoolTotalProtocolFee = "pool__totalProtocolFee",
-    PoolTotalProtocolFeePaidInBpt = "pool__totalProtocolFeePaidInBPT",
     PoolTotalShares = "pool__totalShares",
     PoolTotalSwapFee = "pool__totalSwapFee",
     PoolTotalSwapVolume = "pool__totalSwapVolume",
@@ -37406,15 +37118,11 @@ declare enum LatestPrice_OrderBy {
     PoolIdId = "poolId__id",
     PoolIdIsInRecoveryMode = "poolId__isInRecoveryMode",
     PoolIdIsPaused = "poolId__isPaused",
-    PoolIdJoinExitEnabled = "poolId__joinExitEnabled",
     PoolIdLambda = "poolId__lambda",
-    PoolIdLastJoinExitAmp = "poolId__lastJoinExitAmp",
     PoolIdLastPostJoinExitInvariant = "poolId__lastPostJoinExitInvariant",
     PoolIdLowerTarget = "poolId__lowerTarget",
     PoolIdMainIndex = "poolId__mainIndex",
-    PoolIdManagementAumFee = "poolId__managementAumFee",
     PoolIdManagementFee = "poolId__managementFee",
-    PoolIdMustAllowlistLPs = "poolId__mustAllowlistLPs",
     PoolIdName = "poolId__name",
     PoolIdOracleEnabled = "poolId__oracleEnabled",
     PoolIdOwner = "poolId__owner",
@@ -37431,8 +37139,6 @@ declare enum LatestPrice_OrderBy {
     PoolIdSqrtBeta = "poolId__sqrtBeta",
     PoolIdStrategyType = "poolId__strategyType",
     PoolIdSwapEnabled = "poolId__swapEnabled",
-    PoolIdSwapEnabledCurationSignal = "poolId__swapEnabledCurationSignal",
-    PoolIdSwapEnabledInternal = "poolId__swapEnabledInternal",
     PoolIdSwapFee = "poolId__swapFee",
     PoolIdSwapsCount = "poolId__swapsCount",
     PoolIdSymbol = "poolId__symbol",
@@ -37440,11 +37146,7 @@ declare enum LatestPrice_OrderBy {
     PoolIdTauAlphaY = "poolId__tauAlphaY",
     PoolIdTauBetaX = "poolId__tauBetaX",
     PoolIdTauBetaY = "poolId__tauBetaY",
-    PoolIdTotalAumFeeCollectedInBpt = "poolId__totalAumFeeCollectedInBPT",
     PoolIdTotalLiquidity = "poolId__totalLiquidity",
-    PoolIdTotalLiquiditySansBpt = "poolId__totalLiquiditySansBPT",
-    PoolIdTotalProtocolFee = "poolId__totalProtocolFee",
-    PoolIdTotalProtocolFeePaidInBpt = "poolId__totalProtocolFeePaidInBPT",
     PoolIdTotalShares = "poolId__totalShares",
     PoolIdTotalSwapFee = "poolId__totalSwapFee",
     PoolIdTotalSwapVolume = "poolId__totalSwapVolume",
@@ -37630,15 +37332,11 @@ declare enum PoolHistoricalLiquidity_OrderBy {
     PoolIdId = "poolId__id",
     PoolIdIsInRecoveryMode = "poolId__isInRecoveryMode",
     PoolIdIsPaused = "poolId__isPaused",
-    PoolIdJoinExitEnabled = "poolId__joinExitEnabled",
     PoolIdLambda = "poolId__lambda",
-    PoolIdLastJoinExitAmp = "poolId__lastJoinExitAmp",
     PoolIdLastPostJoinExitInvariant = "poolId__lastPostJoinExitInvariant",
     PoolIdLowerTarget = "poolId__lowerTarget",
     PoolIdMainIndex = "poolId__mainIndex",
-    PoolIdManagementAumFee = "poolId__managementAumFee",
     PoolIdManagementFee = "poolId__managementFee",
-    PoolIdMustAllowlistLPs = "poolId__mustAllowlistLPs",
     PoolIdName = "poolId__name",
     PoolIdOracleEnabled = "poolId__oracleEnabled",
     PoolIdOwner = "poolId__owner",
@@ -37655,8 +37353,6 @@ declare enum PoolHistoricalLiquidity_OrderBy {
     PoolIdSqrtBeta = "poolId__sqrtBeta",
     PoolIdStrategyType = "poolId__strategyType",
     PoolIdSwapEnabled = "poolId__swapEnabled",
-    PoolIdSwapEnabledCurationSignal = "poolId__swapEnabledCurationSignal",
-    PoolIdSwapEnabledInternal = "poolId__swapEnabledInternal",
     PoolIdSwapFee = "poolId__swapFee",
     PoolIdSwapsCount = "poolId__swapsCount",
     PoolIdSymbol = "poolId__symbol",
@@ -37664,11 +37360,7 @@ declare enum PoolHistoricalLiquidity_OrderBy {
     PoolIdTauAlphaY = "poolId__tauAlphaY",
     PoolIdTauBetaX = "poolId__tauBetaX",
     PoolIdTauBetaY = "poolId__tauBetaY",
-    PoolIdTotalAumFeeCollectedInBpt = "poolId__totalAumFeeCollectedInBPT",
     PoolIdTotalLiquidity = "poolId__totalLiquidity",
-    PoolIdTotalLiquiditySansBpt = "poolId__totalLiquiditySansBPT",
-    PoolIdTotalProtocolFee = "poolId__totalProtocolFee",
-    PoolIdTotalProtocolFeePaidInBpt = "poolId__totalProtocolFeePaidInBPT",
     PoolIdTotalShares = "poolId__totalShares",
     PoolIdTotalSwapFee = "poolId__totalSwapFee",
     PoolIdTotalSwapVolume = "poolId__totalSwapVolume",
@@ -37770,15 +37462,11 @@ declare enum PoolShare_OrderBy {
     PoolIdId = "poolId__id",
     PoolIdIsInRecoveryMode = "poolId__isInRecoveryMode",
     PoolIdIsPaused = "poolId__isPaused",
-    PoolIdJoinExitEnabled = "poolId__joinExitEnabled",
     PoolIdLambda = "poolId__lambda",
-    PoolIdLastJoinExitAmp = "poolId__lastJoinExitAmp",
     PoolIdLastPostJoinExitInvariant = "poolId__lastPostJoinExitInvariant",
     PoolIdLowerTarget = "poolId__lowerTarget",
     PoolIdMainIndex = "poolId__mainIndex",
-    PoolIdManagementAumFee = "poolId__managementAumFee",
     PoolIdManagementFee = "poolId__managementFee",
-    PoolIdMustAllowlistLPs = "poolId__mustAllowlistLPs",
     PoolIdName = "poolId__name",
     PoolIdOracleEnabled = "poolId__oracleEnabled",
     PoolIdOwner = "poolId__owner",
@@ -37795,8 +37483,6 @@ declare enum PoolShare_OrderBy {
     PoolIdSqrtBeta = "poolId__sqrtBeta",
     PoolIdStrategyType = "poolId__strategyType",
     PoolIdSwapEnabled = "poolId__swapEnabled",
-    PoolIdSwapEnabledCurationSignal = "poolId__swapEnabledCurationSignal",
-    PoolIdSwapEnabledInternal = "poolId__swapEnabledInternal",
     PoolIdSwapFee = "poolId__swapFee",
     PoolIdSwapsCount = "poolId__swapsCount",
     PoolIdSymbol = "poolId__symbol",
@@ -37804,11 +37490,7 @@ declare enum PoolShare_OrderBy {
     PoolIdTauAlphaY = "poolId__tauAlphaY",
     PoolIdTauBetaX = "poolId__tauBetaX",
     PoolIdTauBetaY = "poolId__tauBetaY",
-    PoolIdTotalAumFeeCollectedInBpt = "poolId__totalAumFeeCollectedInBPT",
     PoolIdTotalLiquidity = "poolId__totalLiquidity",
-    PoolIdTotalLiquiditySansBpt = "poolId__totalLiquiditySansBPT",
-    PoolIdTotalProtocolFee = "poolId__totalProtocolFee",
-    PoolIdTotalProtocolFeePaidInBpt = "poolId__totalProtocolFeePaidInBPT",
     PoolIdTotalShares = "poolId__totalShares",
     PoolIdTotalSwapFee = "poolId__totalSwapFee",
     PoolIdTotalSwapVolume = "poolId__totalSwapVolume",
@@ -37880,14 +37562,6 @@ type PoolSnapshot_Filter = {
     pool_not_starts_with_nocase?: InputMaybe$1<Scalars$1['String']>;
     pool_starts_with?: InputMaybe$1<Scalars$1['String']>;
     pool_starts_with_nocase?: InputMaybe$1<Scalars$1['String']>;
-    protocolFee?: InputMaybe$1<Scalars$1['BigDecimal']>;
-    protocolFee_gt?: InputMaybe$1<Scalars$1['BigDecimal']>;
-    protocolFee_gte?: InputMaybe$1<Scalars$1['BigDecimal']>;
-    protocolFee_in?: InputMaybe$1<Array<Scalars$1['BigDecimal']>>;
-    protocolFee_lt?: InputMaybe$1<Scalars$1['BigDecimal']>;
-    protocolFee_lte?: InputMaybe$1<Scalars$1['BigDecimal']>;
-    protocolFee_not?: InputMaybe$1<Scalars$1['BigDecimal']>;
-    protocolFee_not_in?: InputMaybe$1<Array<Scalars$1['BigDecimal']>>;
     swapFees?: InputMaybe$1<Scalars$1['BigDecimal']>;
     swapFees_gt?: InputMaybe$1<Scalars$1['BigDecimal']>;
     swapFees_gte?: InputMaybe$1<Scalars$1['BigDecimal']>;
@@ -37951,15 +37625,11 @@ declare enum PoolSnapshot_OrderBy {
     PoolId = "pool__id",
     PoolIsInRecoveryMode = "pool__isInRecoveryMode",
     PoolIsPaused = "pool__isPaused",
-    PoolJoinExitEnabled = "pool__joinExitEnabled",
     PoolLambda = "pool__lambda",
-    PoolLastJoinExitAmp = "pool__lastJoinExitAmp",
     PoolLastPostJoinExitInvariant = "pool__lastPostJoinExitInvariant",
     PoolLowerTarget = "pool__lowerTarget",
     PoolMainIndex = "pool__mainIndex",
-    PoolManagementAumFee = "pool__managementAumFee",
     PoolManagementFee = "pool__managementFee",
-    PoolMustAllowlistLPs = "pool__mustAllowlistLPs",
     PoolName = "pool__name",
     PoolOracleEnabled = "pool__oracleEnabled",
     PoolOwner = "pool__owner",
@@ -37976,8 +37646,6 @@ declare enum PoolSnapshot_OrderBy {
     PoolSqrtBeta = "pool__sqrtBeta",
     PoolStrategyType = "pool__strategyType",
     PoolSwapEnabled = "pool__swapEnabled",
-    PoolSwapEnabledCurationSignal = "pool__swapEnabledCurationSignal",
-    PoolSwapEnabledInternal = "pool__swapEnabledInternal",
     PoolSwapFee = "pool__swapFee",
     PoolSwapsCount = "pool__swapsCount",
     PoolSymbol = "pool__symbol",
@@ -37985,11 +37653,7 @@ declare enum PoolSnapshot_OrderBy {
     PoolTauAlphaY = "pool__tauAlphaY",
     PoolTauBetaX = "pool__tauBetaX",
     PoolTauBetaY = "pool__tauBetaY",
-    PoolTotalAumFeeCollectedInBpt = "pool__totalAumFeeCollectedInBPT",
     PoolTotalLiquidity = "pool__totalLiquidity",
-    PoolTotalLiquiditySansBpt = "pool__totalLiquiditySansBPT",
-    PoolTotalProtocolFee = "pool__totalProtocolFee",
-    PoolTotalProtocolFeePaidInBpt = "pool__totalProtocolFeePaidInBPT",
     PoolTotalShares = "pool__totalShares",
     PoolTotalSwapFee = "pool__totalSwapFee",
     PoolTotalSwapVolume = "pool__totalSwapVolume",
@@ -38002,7 +37666,6 @@ declare enum PoolSnapshot_OrderBy {
     PoolW = "pool__w",
     PoolWrappedIndex = "pool__wrappedIndex",
     PoolZ = "pool__z",
-    ProtocolFee = "protocolFee",
     SwapFees = "swapFees",
     SwapVolume = "swapVolume",
     SwapsCount = "swapsCount",
@@ -38059,27 +37722,6 @@ type PoolToken_Filter = {
     cashBalance_lte?: InputMaybe$1<Scalars$1['BigDecimal']>;
     cashBalance_not?: InputMaybe$1<Scalars$1['BigDecimal']>;
     cashBalance_not_in?: InputMaybe$1<Array<Scalars$1['BigDecimal']>>;
-    circuitBreaker?: InputMaybe$1<Scalars$1['String']>;
-    circuitBreaker_?: InputMaybe$1<CircuitBreaker_Filter>;
-    circuitBreaker_contains?: InputMaybe$1<Scalars$1['String']>;
-    circuitBreaker_contains_nocase?: InputMaybe$1<Scalars$1['String']>;
-    circuitBreaker_ends_with?: InputMaybe$1<Scalars$1['String']>;
-    circuitBreaker_ends_with_nocase?: InputMaybe$1<Scalars$1['String']>;
-    circuitBreaker_gt?: InputMaybe$1<Scalars$1['String']>;
-    circuitBreaker_gte?: InputMaybe$1<Scalars$1['String']>;
-    circuitBreaker_in?: InputMaybe$1<Array<Scalars$1['String']>>;
-    circuitBreaker_lt?: InputMaybe$1<Scalars$1['String']>;
-    circuitBreaker_lte?: InputMaybe$1<Scalars$1['String']>;
-    circuitBreaker_not?: InputMaybe$1<Scalars$1['String']>;
-    circuitBreaker_not_contains?: InputMaybe$1<Scalars$1['String']>;
-    circuitBreaker_not_contains_nocase?: InputMaybe$1<Scalars$1['String']>;
-    circuitBreaker_not_ends_with?: InputMaybe$1<Scalars$1['String']>;
-    circuitBreaker_not_ends_with_nocase?: InputMaybe$1<Scalars$1['String']>;
-    circuitBreaker_not_in?: InputMaybe$1<Array<Scalars$1['String']>>;
-    circuitBreaker_not_starts_with?: InputMaybe$1<Scalars$1['String']>;
-    circuitBreaker_not_starts_with_nocase?: InputMaybe$1<Scalars$1['String']>;
-    circuitBreaker_starts_with?: InputMaybe$1<Scalars$1['String']>;
-    circuitBreaker_starts_with_nocase?: InputMaybe$1<Scalars$1['String']>;
     decimals?: InputMaybe$1<Scalars$1['Int']>;
     decimals_gt?: InputMaybe$1<Scalars$1['Int']>;
     decimals_gte?: InputMaybe$1<Scalars$1['Int']>;
@@ -38146,14 +37788,6 @@ type PoolToken_Filter = {
     oldPriceRate_not?: InputMaybe$1<Scalars$1['BigDecimal']>;
     oldPriceRate_not_in?: InputMaybe$1<Array<Scalars$1['BigDecimal']>>;
     or?: InputMaybe$1<Array<InputMaybe$1<PoolToken_Filter>>>;
-    paidProtocolFees?: InputMaybe$1<Scalars$1['BigDecimal']>;
-    paidProtocolFees_gt?: InputMaybe$1<Scalars$1['BigDecimal']>;
-    paidProtocolFees_gte?: InputMaybe$1<Scalars$1['BigDecimal']>;
-    paidProtocolFees_in?: InputMaybe$1<Array<Scalars$1['BigDecimal']>>;
-    paidProtocolFees_lt?: InputMaybe$1<Scalars$1['BigDecimal']>;
-    paidProtocolFees_lte?: InputMaybe$1<Scalars$1['BigDecimal']>;
-    paidProtocolFees_not?: InputMaybe$1<Scalars$1['BigDecimal']>;
-    paidProtocolFees_not_in?: InputMaybe$1<Array<Scalars$1['BigDecimal']>>;
     poolId?: InputMaybe$1<Scalars$1['String']>;
     poolId_?: InputMaybe$1<Pool_Filter$1>;
     poolId_contains?: InputMaybe$1<Scalars$1['String']>;
@@ -38255,7 +37889,6 @@ type Pool_Filter$1 = {
     alpha_not?: InputMaybe$1<Scalars$1['BigDecimal']>;
     alpha_not_in?: InputMaybe$1<Array<Scalars$1['BigDecimal']>>;
     amp?: InputMaybe$1<Scalars$1['BigInt']>;
-    ampUpdates_?: InputMaybe$1<AmpUpdate_Filter>;
     amp_gt?: InputMaybe$1<Scalars$1['BigInt']>;
     amp_gte?: InputMaybe$1<Scalars$1['BigInt']>;
     amp_in?: InputMaybe$1<Array<Scalars$1['BigInt']>>;
@@ -38290,7 +37923,6 @@ type Pool_Filter$1 = {
     c_lte?: InputMaybe$1<Scalars$1['BigDecimal']>;
     c_not?: InputMaybe$1<Scalars$1['BigDecimal']>;
     c_not_in?: InputMaybe$1<Array<Scalars$1['BigDecimal']>>;
-    circuitBreakers_?: InputMaybe$1<CircuitBreaker_Filter>;
     createTime?: InputMaybe$1<Scalars$1['Int']>;
     createTime_gt?: InputMaybe$1<Scalars$1['Int']>;
     createTime_gte?: InputMaybe$1<Scalars$1['Int']>;
@@ -38366,11 +37998,6 @@ type Pool_Filter$1 = {
     isPaused_in?: InputMaybe$1<Array<Scalars$1['Boolean']>>;
     isPaused_not?: InputMaybe$1<Scalars$1['Boolean']>;
     isPaused_not_in?: InputMaybe$1<Array<Scalars$1['Boolean']>>;
-    joinExitEnabled?: InputMaybe$1<Scalars$1['Boolean']>;
-    joinExitEnabled_in?: InputMaybe$1<Array<Scalars$1['Boolean']>>;
-    joinExitEnabled_not?: InputMaybe$1<Scalars$1['Boolean']>;
-    joinExitEnabled_not_in?: InputMaybe$1<Array<Scalars$1['Boolean']>>;
-    joinsExits_?: InputMaybe$1<JoinExit_Filter>;
     lambda?: InputMaybe$1<Scalars$1['BigDecimal']>;
     lambda_gt?: InputMaybe$1<Scalars$1['BigDecimal']>;
     lambda_gte?: InputMaybe$1<Scalars$1['BigDecimal']>;
@@ -38379,14 +38006,6 @@ type Pool_Filter$1 = {
     lambda_lte?: InputMaybe$1<Scalars$1['BigDecimal']>;
     lambda_not?: InputMaybe$1<Scalars$1['BigDecimal']>;
     lambda_not_in?: InputMaybe$1<Array<Scalars$1['BigDecimal']>>;
-    lastJoinExitAmp?: InputMaybe$1<Scalars$1['BigInt']>;
-    lastJoinExitAmp_gt?: InputMaybe$1<Scalars$1['BigInt']>;
-    lastJoinExitAmp_gte?: InputMaybe$1<Scalars$1['BigInt']>;
-    lastJoinExitAmp_in?: InputMaybe$1<Array<Scalars$1['BigInt']>>;
-    lastJoinExitAmp_lt?: InputMaybe$1<Scalars$1['BigInt']>;
-    lastJoinExitAmp_lte?: InputMaybe$1<Scalars$1['BigInt']>;
-    lastJoinExitAmp_not?: InputMaybe$1<Scalars$1['BigInt']>;
-    lastJoinExitAmp_not_in?: InputMaybe$1<Array<Scalars$1['BigInt']>>;
     lastPostJoinExitInvariant?: InputMaybe$1<Scalars$1['BigDecimal']>;
     lastPostJoinExitInvariant_gt?: InputMaybe$1<Scalars$1['BigDecimal']>;
     lastPostJoinExitInvariant_gte?: InputMaybe$1<Scalars$1['BigDecimal']>;
@@ -38395,27 +38014,6 @@ type Pool_Filter$1 = {
     lastPostJoinExitInvariant_lte?: InputMaybe$1<Scalars$1['BigDecimal']>;
     lastPostJoinExitInvariant_not?: InputMaybe$1<Scalars$1['BigDecimal']>;
     lastPostJoinExitInvariant_not_in?: InputMaybe$1<Array<Scalars$1['BigDecimal']>>;
-    latestAmpUpdate?: InputMaybe$1<Scalars$1['String']>;
-    latestAmpUpdate_?: InputMaybe$1<AmpUpdate_Filter>;
-    latestAmpUpdate_contains?: InputMaybe$1<Scalars$1['String']>;
-    latestAmpUpdate_contains_nocase?: InputMaybe$1<Scalars$1['String']>;
-    latestAmpUpdate_ends_with?: InputMaybe$1<Scalars$1['String']>;
-    latestAmpUpdate_ends_with_nocase?: InputMaybe$1<Scalars$1['String']>;
-    latestAmpUpdate_gt?: InputMaybe$1<Scalars$1['String']>;
-    latestAmpUpdate_gte?: InputMaybe$1<Scalars$1['String']>;
-    latestAmpUpdate_in?: InputMaybe$1<Array<Scalars$1['String']>>;
-    latestAmpUpdate_lt?: InputMaybe$1<Scalars$1['String']>;
-    latestAmpUpdate_lte?: InputMaybe$1<Scalars$1['String']>;
-    latestAmpUpdate_not?: InputMaybe$1<Scalars$1['String']>;
-    latestAmpUpdate_not_contains?: InputMaybe$1<Scalars$1['String']>;
-    latestAmpUpdate_not_contains_nocase?: InputMaybe$1<Scalars$1['String']>;
-    latestAmpUpdate_not_ends_with?: InputMaybe$1<Scalars$1['String']>;
-    latestAmpUpdate_not_ends_with_nocase?: InputMaybe$1<Scalars$1['String']>;
-    latestAmpUpdate_not_in?: InputMaybe$1<Array<Scalars$1['String']>>;
-    latestAmpUpdate_not_starts_with?: InputMaybe$1<Scalars$1['String']>;
-    latestAmpUpdate_not_starts_with_nocase?: InputMaybe$1<Scalars$1['String']>;
-    latestAmpUpdate_starts_with?: InputMaybe$1<Scalars$1['String']>;
-    latestAmpUpdate_starts_with_nocase?: InputMaybe$1<Scalars$1['String']>;
     lowerTarget?: InputMaybe$1<Scalars$1['BigDecimal']>;
     lowerTarget_gt?: InputMaybe$1<Scalars$1['BigDecimal']>;
     lowerTarget_gte?: InputMaybe$1<Scalars$1['BigDecimal']>;
@@ -38432,14 +38030,6 @@ type Pool_Filter$1 = {
     mainIndex_lte?: InputMaybe$1<Scalars$1['Int']>;
     mainIndex_not?: InputMaybe$1<Scalars$1['Int']>;
     mainIndex_not_in?: InputMaybe$1<Array<Scalars$1['Int']>>;
-    managementAumFee?: InputMaybe$1<Scalars$1['BigDecimal']>;
-    managementAumFee_gt?: InputMaybe$1<Scalars$1['BigDecimal']>;
-    managementAumFee_gte?: InputMaybe$1<Scalars$1['BigDecimal']>;
-    managementAumFee_in?: InputMaybe$1<Array<Scalars$1['BigDecimal']>>;
-    managementAumFee_lt?: InputMaybe$1<Scalars$1['BigDecimal']>;
-    managementAumFee_lte?: InputMaybe$1<Scalars$1['BigDecimal']>;
-    managementAumFee_not?: InputMaybe$1<Scalars$1['BigDecimal']>;
-    managementAumFee_not_in?: InputMaybe$1<Array<Scalars$1['BigDecimal']>>;
     managementFee?: InputMaybe$1<Scalars$1['BigDecimal']>;
     managementFee_gt?: InputMaybe$1<Scalars$1['BigDecimal']>;
     managementFee_gte?: InputMaybe$1<Scalars$1['BigDecimal']>;
@@ -38448,10 +38038,6 @@ type Pool_Filter$1 = {
     managementFee_lte?: InputMaybe$1<Scalars$1['BigDecimal']>;
     managementFee_not?: InputMaybe$1<Scalars$1['BigDecimal']>;
     managementFee_not_in?: InputMaybe$1<Array<Scalars$1['BigDecimal']>>;
-    mustAllowlistLPs?: InputMaybe$1<Scalars$1['Boolean']>;
-    mustAllowlistLPs_in?: InputMaybe$1<Array<Scalars$1['Boolean']>>;
-    mustAllowlistLPs_not?: InputMaybe$1<Scalars$1['Boolean']>;
-    mustAllowlistLPs_not_in?: InputMaybe$1<Array<Scalars$1['Boolean']>>;
     name?: InputMaybe$1<Scalars$1['String']>;
     name_contains?: InputMaybe$1<Scalars$1['String']>;
     name_contains_nocase?: InputMaybe$1<Scalars$1['String']>;
@@ -38622,14 +38208,6 @@ type Pool_Filter$1 = {
     strategyType_not?: InputMaybe$1<Scalars$1['Int']>;
     strategyType_not_in?: InputMaybe$1<Array<Scalars$1['Int']>>;
     swapEnabled?: InputMaybe$1<Scalars$1['Boolean']>;
-    swapEnabledCurationSignal?: InputMaybe$1<Scalars$1['Boolean']>;
-    swapEnabledCurationSignal_in?: InputMaybe$1<Array<Scalars$1['Boolean']>>;
-    swapEnabledCurationSignal_not?: InputMaybe$1<Scalars$1['Boolean']>;
-    swapEnabledCurationSignal_not_in?: InputMaybe$1<Array<Scalars$1['Boolean']>>;
-    swapEnabledInternal?: InputMaybe$1<Scalars$1['Boolean']>;
-    swapEnabledInternal_in?: InputMaybe$1<Array<Scalars$1['Boolean']>>;
-    swapEnabledInternal_not?: InputMaybe$1<Scalars$1['Boolean']>;
-    swapEnabledInternal_not_in?: InputMaybe$1<Array<Scalars$1['Boolean']>>;
     swapEnabled_in?: InputMaybe$1<Array<Scalars$1['Boolean']>>;
     swapEnabled_not?: InputMaybe$1<Scalars$1['Boolean']>;
     swapEnabled_not_in?: InputMaybe$1<Array<Scalars$1['Boolean']>>;
@@ -38709,23 +38287,7 @@ type Pool_Filter$1 = {
     tokensList_not_contains?: InputMaybe$1<Array<Scalars$1['Bytes']>>;
     tokensList_not_contains_nocase?: InputMaybe$1<Array<Scalars$1['Bytes']>>;
     tokens_?: InputMaybe$1<PoolToken_Filter>;
-    totalAumFeeCollectedInBPT?: InputMaybe$1<Scalars$1['BigDecimal']>;
-    totalAumFeeCollectedInBPT_gt?: InputMaybe$1<Scalars$1['BigDecimal']>;
-    totalAumFeeCollectedInBPT_gte?: InputMaybe$1<Scalars$1['BigDecimal']>;
-    totalAumFeeCollectedInBPT_in?: InputMaybe$1<Array<Scalars$1['BigDecimal']>>;
-    totalAumFeeCollectedInBPT_lt?: InputMaybe$1<Scalars$1['BigDecimal']>;
-    totalAumFeeCollectedInBPT_lte?: InputMaybe$1<Scalars$1['BigDecimal']>;
-    totalAumFeeCollectedInBPT_not?: InputMaybe$1<Scalars$1['BigDecimal']>;
-    totalAumFeeCollectedInBPT_not_in?: InputMaybe$1<Array<Scalars$1['BigDecimal']>>;
     totalLiquidity?: InputMaybe$1<Scalars$1['BigDecimal']>;
-    totalLiquiditySansBPT?: InputMaybe$1<Scalars$1['BigDecimal']>;
-    totalLiquiditySansBPT_gt?: InputMaybe$1<Scalars$1['BigDecimal']>;
-    totalLiquiditySansBPT_gte?: InputMaybe$1<Scalars$1['BigDecimal']>;
-    totalLiquiditySansBPT_in?: InputMaybe$1<Array<Scalars$1['BigDecimal']>>;
-    totalLiquiditySansBPT_lt?: InputMaybe$1<Scalars$1['BigDecimal']>;
-    totalLiquiditySansBPT_lte?: InputMaybe$1<Scalars$1['BigDecimal']>;
-    totalLiquiditySansBPT_not?: InputMaybe$1<Scalars$1['BigDecimal']>;
-    totalLiquiditySansBPT_not_in?: InputMaybe$1<Array<Scalars$1['BigDecimal']>>;
     totalLiquidity_gt?: InputMaybe$1<Scalars$1['BigDecimal']>;
     totalLiquidity_gte?: InputMaybe$1<Scalars$1['BigDecimal']>;
     totalLiquidity_in?: InputMaybe$1<Array<Scalars$1['BigDecimal']>>;
@@ -38733,22 +38295,6 @@ type Pool_Filter$1 = {
     totalLiquidity_lte?: InputMaybe$1<Scalars$1['BigDecimal']>;
     totalLiquidity_not?: InputMaybe$1<Scalars$1['BigDecimal']>;
     totalLiquidity_not_in?: InputMaybe$1<Array<Scalars$1['BigDecimal']>>;
-    totalProtocolFee?: InputMaybe$1<Scalars$1['BigDecimal']>;
-    totalProtocolFeePaidInBPT?: InputMaybe$1<Scalars$1['BigDecimal']>;
-    totalProtocolFeePaidInBPT_gt?: InputMaybe$1<Scalars$1['BigDecimal']>;
-    totalProtocolFeePaidInBPT_gte?: InputMaybe$1<Scalars$1['BigDecimal']>;
-    totalProtocolFeePaidInBPT_in?: InputMaybe$1<Array<Scalars$1['BigDecimal']>>;
-    totalProtocolFeePaidInBPT_lt?: InputMaybe$1<Scalars$1['BigDecimal']>;
-    totalProtocolFeePaidInBPT_lte?: InputMaybe$1<Scalars$1['BigDecimal']>;
-    totalProtocolFeePaidInBPT_not?: InputMaybe$1<Scalars$1['BigDecimal']>;
-    totalProtocolFeePaidInBPT_not_in?: InputMaybe$1<Array<Scalars$1['BigDecimal']>>;
-    totalProtocolFee_gt?: InputMaybe$1<Scalars$1['BigDecimal']>;
-    totalProtocolFee_gte?: InputMaybe$1<Scalars$1['BigDecimal']>;
-    totalProtocolFee_in?: InputMaybe$1<Array<Scalars$1['BigDecimal']>>;
-    totalProtocolFee_lt?: InputMaybe$1<Scalars$1['BigDecimal']>;
-    totalProtocolFee_lte?: InputMaybe$1<Scalars$1['BigDecimal']>;
-    totalProtocolFee_not?: InputMaybe$1<Scalars$1['BigDecimal']>;
-    totalProtocolFee_not_in?: InputMaybe$1<Array<Scalars$1['BigDecimal']>>;
     totalShares?: InputMaybe$1<Scalars$1['BigDecimal']>;
     totalShares_gt?: InputMaybe$1<Scalars$1['BigDecimal']>;
     totalShares_gte?: InputMaybe$1<Scalars$1['BigDecimal']>;
@@ -38874,11 +38420,9 @@ declare enum Pool_OrderBy$1 {
     Address = "address",
     Alpha = "alpha",
     Amp = "amp",
-    AmpUpdates = "ampUpdates",
     BaseToken = "baseToken",
     Beta = "beta",
     C = "c",
-    CircuitBreakers = "circuitBreakers",
     CreateTime = "createTime",
     DSq = "dSq",
     Delta = "delta",
@@ -38890,23 +38434,11 @@ declare enum Pool_OrderBy$1 {
     Id = "id",
     IsInRecoveryMode = "isInRecoveryMode",
     IsPaused = "isPaused",
-    JoinExitEnabled = "joinExitEnabled",
-    JoinsExits = "joinsExits",
     Lambda = "lambda",
-    LastJoinExitAmp = "lastJoinExitAmp",
     LastPostJoinExitInvariant = "lastPostJoinExitInvariant",
-    LatestAmpUpdate = "latestAmpUpdate",
-    LatestAmpUpdateEndAmp = "latestAmpUpdate__endAmp",
-    LatestAmpUpdateEndTimestamp = "latestAmpUpdate__endTimestamp",
-    LatestAmpUpdateId = "latestAmpUpdate__id",
-    LatestAmpUpdateScheduledTimestamp = "latestAmpUpdate__scheduledTimestamp",
-    LatestAmpUpdateStartAmp = "latestAmpUpdate__startAmp",
-    LatestAmpUpdateStartTimestamp = "latestAmpUpdate__startTimestamp",
     LowerTarget = "lowerTarget",
     MainIndex = "mainIndex",
-    ManagementAumFee = "managementAumFee",
     ManagementFee = "managementFee",
-    MustAllowlistLPs = "mustAllowlistLPs",
     Name = "name",
     OracleEnabled = "oracleEnabled",
     Owner = "owner",
@@ -38929,8 +38461,6 @@ declare enum Pool_OrderBy$1 {
     SqrtBeta = "sqrtBeta",
     StrategyType = "strategyType",
     SwapEnabled = "swapEnabled",
-    SwapEnabledCurationSignal = "swapEnabledCurationSignal",
-    SwapEnabledInternal = "swapEnabledInternal",
     SwapFee = "swapFee",
     Swaps = "swaps",
     SwapsCount = "swapsCount",
@@ -38941,11 +38471,7 @@ declare enum Pool_OrderBy$1 {
     TauBetaY = "tauBetaY",
     Tokens = "tokens",
     TokensList = "tokensList",
-    TotalAumFeeCollectedInBpt = "totalAumFeeCollectedInBPT",
     TotalLiquidity = "totalLiquidity",
-    TotalLiquiditySansBpt = "totalLiquiditySansBPT",
-    TotalProtocolFee = "totalProtocolFee",
-    TotalProtocolFeePaidInBpt = "totalProtocolFeePaidInBPT",
     TotalShares = "totalShares",
     TotalSwapFee = "totalSwapFee",
     TotalSwapVolume = "totalSwapVolume",
@@ -38958,9 +38484,7 @@ declare enum Pool_OrderBy$1 {
     VaultId = "vaultID",
     VaultIdId = "vaultID__id",
     VaultIdPoolCount = "vaultID__poolCount",
-    VaultIdProtocolFeesCollector = "vaultID__protocolFeesCollector",
     VaultIdTotalLiquidity = "vaultID__totalLiquidity",
-    VaultIdTotalProtocolFee = "vaultID__totalProtocolFee",
     VaultIdTotalSwapCount = "vaultID__totalSwapCount",
     VaultIdTotalSwapFee = "vaultID__totalSwapFee",
     VaultIdTotalSwapVolume = "vaultID__totalSwapVolume",
@@ -39105,14 +38629,6 @@ type Swap_Filter = {
     /** Filter for the block changed event. */
     _change_block?: InputMaybe$1<BlockChangedFilter$1>;
     and?: InputMaybe$1<Array<InputMaybe$1<Swap_Filter>>>;
-    block?: InputMaybe$1<Scalars$1['BigInt']>;
-    block_gt?: InputMaybe$1<Scalars$1['BigInt']>;
-    block_gte?: InputMaybe$1<Scalars$1['BigInt']>;
-    block_in?: InputMaybe$1<Array<Scalars$1['BigInt']>>;
-    block_lt?: InputMaybe$1<Scalars$1['BigInt']>;
-    block_lte?: InputMaybe$1<Scalars$1['BigInt']>;
-    block_not?: InputMaybe$1<Scalars$1['BigInt']>;
-    block_not_in?: InputMaybe$1<Array<Scalars$1['BigInt']>>;
     caller?: InputMaybe$1<Scalars$1['Bytes']>;
     caller_contains?: InputMaybe$1<Scalars$1['Bytes']>;
     caller_gt?: InputMaybe$1<Scalars$1['Bytes']>;
@@ -39386,15 +38902,11 @@ declare enum TokenPrice_OrderBy {
     PoolIdId = "poolId__id",
     PoolIdIsInRecoveryMode = "poolId__isInRecoveryMode",
     PoolIdIsPaused = "poolId__isPaused",
-    PoolIdJoinExitEnabled = "poolId__joinExitEnabled",
     PoolIdLambda = "poolId__lambda",
-    PoolIdLastJoinExitAmp = "poolId__lastJoinExitAmp",
     PoolIdLastPostJoinExitInvariant = "poolId__lastPostJoinExitInvariant",
     PoolIdLowerTarget = "poolId__lowerTarget",
     PoolIdMainIndex = "poolId__mainIndex",
-    PoolIdManagementAumFee = "poolId__managementAumFee",
     PoolIdManagementFee = "poolId__managementFee",
-    PoolIdMustAllowlistLPs = "poolId__mustAllowlistLPs",
     PoolIdName = "poolId__name",
     PoolIdOracleEnabled = "poolId__oracleEnabled",
     PoolIdOwner = "poolId__owner",
@@ -39411,8 +38923,6 @@ declare enum TokenPrice_OrderBy {
     PoolIdSqrtBeta = "poolId__sqrtBeta",
     PoolIdStrategyType = "poolId__strategyType",
     PoolIdSwapEnabled = "poolId__swapEnabled",
-    PoolIdSwapEnabledCurationSignal = "poolId__swapEnabledCurationSignal",
-    PoolIdSwapEnabledInternal = "poolId__swapEnabledInternal",
     PoolIdSwapFee = "poolId__swapFee",
     PoolIdSwapsCount = "poolId__swapsCount",
     PoolIdSymbol = "poolId__symbol",
@@ -39420,11 +38930,7 @@ declare enum TokenPrice_OrderBy {
     PoolIdTauAlphaY = "poolId__tauAlphaY",
     PoolIdTauBetaX = "poolId__tauBetaX",
     PoolIdTauBetaY = "poolId__tauBetaY",
-    PoolIdTotalAumFeeCollectedInBpt = "poolId__totalAumFeeCollectedInBPT",
     PoolIdTotalLiquidity = "poolId__totalLiquidity",
-    PoolIdTotalLiquiditySansBpt = "poolId__totalLiquiditySansBPT",
-    PoolIdTotalProtocolFee = "poolId__totalProtocolFee",
-    PoolIdTotalProtocolFeePaidInBpt = "poolId__totalProtocolFeePaidInBPT",
     PoolIdTotalShares = "poolId__totalShares",
     PoolIdTotalSwapFee = "poolId__totalSwapFee",
     PoolIdTotalSwapVolume = "poolId__totalSwapVolume",
@@ -39473,14 +38979,6 @@ type Token_Filter = {
     decimals_lte?: InputMaybe$1<Scalars$1['Int']>;
     decimals_not?: InputMaybe$1<Scalars$1['Int']>;
     decimals_not_in?: InputMaybe$1<Array<Scalars$1['Int']>>;
-    fxOracleDecimals?: InputMaybe$1<Scalars$1['Int']>;
-    fxOracleDecimals_gt?: InputMaybe$1<Scalars$1['Int']>;
-    fxOracleDecimals_gte?: InputMaybe$1<Scalars$1['Int']>;
-    fxOracleDecimals_in?: InputMaybe$1<Array<Scalars$1['Int']>>;
-    fxOracleDecimals_lt?: InputMaybe$1<Scalars$1['Int']>;
-    fxOracleDecimals_lte?: InputMaybe$1<Scalars$1['Int']>;
-    fxOracleDecimals_not?: InputMaybe$1<Scalars$1['Int']>;
-    fxOracleDecimals_not_in?: InputMaybe$1<Array<Scalars$1['Int']>>;
     id?: InputMaybe$1<Scalars$1['ID']>;
     id_gt?: InputMaybe$1<Scalars$1['ID']>;
     id_gte?: InputMaybe$1<Scalars$1['ID']>;
@@ -39659,27 +39157,6 @@ type UserInternalBalance_Filter = {
     id_not_in?: InputMaybe$1<Array<Scalars$1['ID']>>;
     or?: InputMaybe$1<Array<InputMaybe$1<UserInternalBalance_Filter>>>;
     token?: InputMaybe$1<Scalars$1['Bytes']>;
-    tokenInfo?: InputMaybe$1<Scalars$1['String']>;
-    tokenInfo_?: InputMaybe$1<Token_Filter>;
-    tokenInfo_contains?: InputMaybe$1<Scalars$1['String']>;
-    tokenInfo_contains_nocase?: InputMaybe$1<Scalars$1['String']>;
-    tokenInfo_ends_with?: InputMaybe$1<Scalars$1['String']>;
-    tokenInfo_ends_with_nocase?: InputMaybe$1<Scalars$1['String']>;
-    tokenInfo_gt?: InputMaybe$1<Scalars$1['String']>;
-    tokenInfo_gte?: InputMaybe$1<Scalars$1['String']>;
-    tokenInfo_in?: InputMaybe$1<Array<Scalars$1['String']>>;
-    tokenInfo_lt?: InputMaybe$1<Scalars$1['String']>;
-    tokenInfo_lte?: InputMaybe$1<Scalars$1['String']>;
-    tokenInfo_not?: InputMaybe$1<Scalars$1['String']>;
-    tokenInfo_not_contains?: InputMaybe$1<Scalars$1['String']>;
-    tokenInfo_not_contains_nocase?: InputMaybe$1<Scalars$1['String']>;
-    tokenInfo_not_ends_with?: InputMaybe$1<Scalars$1['String']>;
-    tokenInfo_not_ends_with_nocase?: InputMaybe$1<Scalars$1['String']>;
-    tokenInfo_not_in?: InputMaybe$1<Array<Scalars$1['String']>>;
-    tokenInfo_not_starts_with?: InputMaybe$1<Scalars$1['String']>;
-    tokenInfo_not_starts_with_nocase?: InputMaybe$1<Scalars$1['String']>;
-    tokenInfo_starts_with?: InputMaybe$1<Scalars$1['String']>;
-    tokenInfo_starts_with_nocase?: InputMaybe$1<Scalars$1['String']>;
     token_contains?: InputMaybe$1<Scalars$1['Bytes']>;
     token_gt?: InputMaybe$1<Scalars$1['Bytes']>;
     token_gte?: InputMaybe$1<Scalars$1['Bytes']>;
@@ -40744,7 +40221,6 @@ type Scalars = {
     BigDecimal: string;
     BigInt: string;
     Bytes: string;
-    Int8: any;
 };
 type BlockChangedFilter = {
     number_gte: Scalars['Int'];
@@ -40756,12 +40232,9 @@ type Block_Height = {
 };
 declare enum Chain {
     Arbitrum = "Arbitrum",
-    Avalanche = "Avalanche",
-    Base = "Base",
     Gnosis = "Gnosis",
     Optimism = "Optimism",
-    Polygon = "Polygon",
-    PolygonZkEvm = "PolygonZkEvm"
+    Polygon = "Polygon"
 }
 type Gauge = {
     __typename?: 'Gauge';
@@ -41142,8 +40615,6 @@ type LiquidityGauge$1 = {
     poolId?: Maybe<Scalars['Bytes']>;
     /**  Relative weight cap of the gauge (0.01 = 1%) - V2 factories only  */
     relativeWeightCap?: Maybe<Scalars['BigDecimal']>;
-    /**  List of reward tokens depositted in the gauge - ChildChainLiquidityGauge only  */
-    rewardTokensList?: Maybe<Array<Scalars['Bytes']>>;
     /**  List of user shares  */
     shares?: Maybe<Array<GaugeShare$1>>;
     /**  Address of the contract that streams reward tokens to the gauge - ChildChainLiquidityGauge only  */
@@ -41267,12 +40738,6 @@ type LiquidityGauge_Filter = {
     relativeWeightCap_lte?: InputMaybe<Scalars['BigDecimal']>;
     relativeWeightCap_not?: InputMaybe<Scalars['BigDecimal']>;
     relativeWeightCap_not_in?: InputMaybe<Array<Scalars['BigDecimal']>>;
-    rewardTokensList?: InputMaybe<Array<Scalars['Bytes']>>;
-    rewardTokensList_contains?: InputMaybe<Array<Scalars['Bytes']>>;
-    rewardTokensList_contains_nocase?: InputMaybe<Array<Scalars['Bytes']>>;
-    rewardTokensList_not?: InputMaybe<Array<Scalars['Bytes']>>;
-    rewardTokensList_not_contains?: InputMaybe<Array<Scalars['Bytes']>>;
-    rewardTokensList_not_contains_nocase?: InputMaybe<Array<Scalars['Bytes']>>;
     shares_?: InputMaybe<GaugeShare_Filter>;
     streamer?: InputMaybe<Scalars['Bytes']>;
     streamer_contains?: InputMaybe<Scalars['Bytes']>;
@@ -41332,130 +40797,12 @@ declare enum LiquidityGauge_OrderBy {
     pool__id = "pool__id",
     pool__poolId = "pool__poolId",
     relativeWeightCap = "relativeWeightCap",
-    rewardTokensList = "rewardTokensList",
     shares = "shares",
     streamer = "streamer",
     symbol = "symbol",
     tokens = "tokens",
     totalSupply = "totalSupply"
 }
-type OmniVotingEscrowLock = {
-    __typename?: 'OmniVotingEscrowLock';
-    /**  veBAL balance at the moment user locks  */
-    bias: Scalars['BigDecimal'];
-    /**  Chain where the lock was bridged to  */
-    dstChainId: Scalars['Int'];
-    /**  Equal to: <userAdress>-<omniVotingEscrow>  */
-    id: Scalars['ID'];
-    /**  User on the local chain (reference to User entity)  */
-    localUser: User;
-    /**  User address on the remote chain  */
-    remoteUser: Scalars['Bytes'];
-    /**  veBAL decay rate (per second)  */
-    slope: Scalars['BigDecimal'];
-    /**  Timestamp the lock was created [seconds]  */
-    timestamp: Scalars['Int'];
-    /**  Reference to VotingEscrow entity  */
-    votingEscrowID: VotingEscrow;
-};
-type OmniVotingEscrowLock_Filter = {
-    /** Filter for the block changed event. */
-    _change_block?: InputMaybe<BlockChangedFilter>;
-    and?: InputMaybe<Array<InputMaybe<OmniVotingEscrowLock_Filter>>>;
-    bias?: InputMaybe<Scalars['BigDecimal']>;
-    bias_gt?: InputMaybe<Scalars['BigDecimal']>;
-    bias_gte?: InputMaybe<Scalars['BigDecimal']>;
-    bias_in?: InputMaybe<Array<Scalars['BigDecimal']>>;
-    bias_lt?: InputMaybe<Scalars['BigDecimal']>;
-    bias_lte?: InputMaybe<Scalars['BigDecimal']>;
-    bias_not?: InputMaybe<Scalars['BigDecimal']>;
-    bias_not_in?: InputMaybe<Array<Scalars['BigDecimal']>>;
-    dstChainId?: InputMaybe<Scalars['Int']>;
-    dstChainId_gt?: InputMaybe<Scalars['Int']>;
-    dstChainId_gte?: InputMaybe<Scalars['Int']>;
-    dstChainId_in?: InputMaybe<Array<Scalars['Int']>>;
-    dstChainId_lt?: InputMaybe<Scalars['Int']>;
-    dstChainId_lte?: InputMaybe<Scalars['Int']>;
-    dstChainId_not?: InputMaybe<Scalars['Int']>;
-    dstChainId_not_in?: InputMaybe<Array<Scalars['Int']>>;
-    id?: InputMaybe<Scalars['ID']>;
-    id_gt?: InputMaybe<Scalars['ID']>;
-    id_gte?: InputMaybe<Scalars['ID']>;
-    id_in?: InputMaybe<Array<Scalars['ID']>>;
-    id_lt?: InputMaybe<Scalars['ID']>;
-    id_lte?: InputMaybe<Scalars['ID']>;
-    id_not?: InputMaybe<Scalars['ID']>;
-    id_not_in?: InputMaybe<Array<Scalars['ID']>>;
-    localUser?: InputMaybe<Scalars['String']>;
-    localUser_?: InputMaybe<User_Filter>;
-    localUser_contains?: InputMaybe<Scalars['String']>;
-    localUser_contains_nocase?: InputMaybe<Scalars['String']>;
-    localUser_ends_with?: InputMaybe<Scalars['String']>;
-    localUser_ends_with_nocase?: InputMaybe<Scalars['String']>;
-    localUser_gt?: InputMaybe<Scalars['String']>;
-    localUser_gte?: InputMaybe<Scalars['String']>;
-    localUser_in?: InputMaybe<Array<Scalars['String']>>;
-    localUser_lt?: InputMaybe<Scalars['String']>;
-    localUser_lte?: InputMaybe<Scalars['String']>;
-    localUser_not?: InputMaybe<Scalars['String']>;
-    localUser_not_contains?: InputMaybe<Scalars['String']>;
-    localUser_not_contains_nocase?: InputMaybe<Scalars['String']>;
-    localUser_not_ends_with?: InputMaybe<Scalars['String']>;
-    localUser_not_ends_with_nocase?: InputMaybe<Scalars['String']>;
-    localUser_not_in?: InputMaybe<Array<Scalars['String']>>;
-    localUser_not_starts_with?: InputMaybe<Scalars['String']>;
-    localUser_not_starts_with_nocase?: InputMaybe<Scalars['String']>;
-    localUser_starts_with?: InputMaybe<Scalars['String']>;
-    localUser_starts_with_nocase?: InputMaybe<Scalars['String']>;
-    or?: InputMaybe<Array<InputMaybe<OmniVotingEscrowLock_Filter>>>;
-    remoteUser?: InputMaybe<Scalars['Bytes']>;
-    remoteUser_contains?: InputMaybe<Scalars['Bytes']>;
-    remoteUser_gt?: InputMaybe<Scalars['Bytes']>;
-    remoteUser_gte?: InputMaybe<Scalars['Bytes']>;
-    remoteUser_in?: InputMaybe<Array<Scalars['Bytes']>>;
-    remoteUser_lt?: InputMaybe<Scalars['Bytes']>;
-    remoteUser_lte?: InputMaybe<Scalars['Bytes']>;
-    remoteUser_not?: InputMaybe<Scalars['Bytes']>;
-    remoteUser_not_contains?: InputMaybe<Scalars['Bytes']>;
-    remoteUser_not_in?: InputMaybe<Array<Scalars['Bytes']>>;
-    slope?: InputMaybe<Scalars['BigDecimal']>;
-    slope_gt?: InputMaybe<Scalars['BigDecimal']>;
-    slope_gte?: InputMaybe<Scalars['BigDecimal']>;
-    slope_in?: InputMaybe<Array<Scalars['BigDecimal']>>;
-    slope_lt?: InputMaybe<Scalars['BigDecimal']>;
-    slope_lte?: InputMaybe<Scalars['BigDecimal']>;
-    slope_not?: InputMaybe<Scalars['BigDecimal']>;
-    slope_not_in?: InputMaybe<Array<Scalars['BigDecimal']>>;
-    timestamp?: InputMaybe<Scalars['Int']>;
-    timestamp_gt?: InputMaybe<Scalars['Int']>;
-    timestamp_gte?: InputMaybe<Scalars['Int']>;
-    timestamp_in?: InputMaybe<Array<Scalars['Int']>>;
-    timestamp_lt?: InputMaybe<Scalars['Int']>;
-    timestamp_lte?: InputMaybe<Scalars['Int']>;
-    timestamp_not?: InputMaybe<Scalars['Int']>;
-    timestamp_not_in?: InputMaybe<Array<Scalars['Int']>>;
-    votingEscrowID?: InputMaybe<Scalars['String']>;
-    votingEscrowID_?: InputMaybe<VotingEscrow_Filter>;
-    votingEscrowID_contains?: InputMaybe<Scalars['String']>;
-    votingEscrowID_contains_nocase?: InputMaybe<Scalars['String']>;
-    votingEscrowID_ends_with?: InputMaybe<Scalars['String']>;
-    votingEscrowID_ends_with_nocase?: InputMaybe<Scalars['String']>;
-    votingEscrowID_gt?: InputMaybe<Scalars['String']>;
-    votingEscrowID_gte?: InputMaybe<Scalars['String']>;
-    votingEscrowID_in?: InputMaybe<Array<Scalars['String']>>;
-    votingEscrowID_lt?: InputMaybe<Scalars['String']>;
-    votingEscrowID_lte?: InputMaybe<Scalars['String']>;
-    votingEscrowID_not?: InputMaybe<Scalars['String']>;
-    votingEscrowID_not_contains?: InputMaybe<Scalars['String']>;
-    votingEscrowID_not_contains_nocase?: InputMaybe<Scalars['String']>;
-    votingEscrowID_not_ends_with?: InputMaybe<Scalars['String']>;
-    votingEscrowID_not_ends_with_nocase?: InputMaybe<Scalars['String']>;
-    votingEscrowID_not_in?: InputMaybe<Array<Scalars['String']>>;
-    votingEscrowID_not_starts_with?: InputMaybe<Scalars['String']>;
-    votingEscrowID_not_starts_with_nocase?: InputMaybe<Scalars['String']>;
-    votingEscrowID_starts_with?: InputMaybe<Scalars['String']>;
-    votingEscrowID_starts_with_nocase?: InputMaybe<Scalars['String']>;
-};
 /** Defines the order direction, either ascending or descending */
 declare enum OrderDirection {
     asc = "asc",
@@ -41766,8 +41113,6 @@ type User = {
     gaugeVotes?: Maybe<Array<GaugeVote>>;
     /**  User address  */
     id: Scalars['ID'];
-    /**  List of omni locks the user created  */
-    omniVotingLocks?: Maybe<Array<OmniVotingEscrowLock>>;
     /**  List of locks the user created  */
     votingLocks?: Maybe<Array<VotingEscrowLock>>;
 };
@@ -41785,7 +41130,6 @@ type User_Filter = {
     id_lte?: InputMaybe<Scalars['ID']>;
     id_not?: InputMaybe<Scalars['ID']>;
     id_not_in?: InputMaybe<Array<Scalars['ID']>>;
-    omniVotingLocks_?: InputMaybe<OmniVotingEscrowLock_Filter>;
     or?: InputMaybe<Array<InputMaybe<User_Filter>>>;
     votingLocks_?: InputMaybe<VotingEscrowLock_Filter>;
 };
@@ -41795,26 +41139,17 @@ type VotingEscrow = {
     id: Scalars['ID'];
     /**  List of veBAL locks created  */
     locks?: Maybe<Array<VotingEscrowLock>>;
-    /**  List of veBAL locks created  */
-    omniLocks?: Maybe<Array<OmniVotingEscrowLock>>;
-    /**  Amount of B-80BAL-20WETH BPT locked, only applies on mainnet  */
-    stakedSupply?: Maybe<Scalars['BigDecimal']>;
+    /**  Amount of B-80BAL-20WETH BPT locked  */
+    stakedSupply: Scalars['BigDecimal'];
 };
 type VotingEscrowLock = {
     __typename?: 'VotingEscrowLock';
-    /**  veBAL balance at the moment user locks  */
-    bias: Scalars['BigDecimal'];
     /**  Equal to: <userAdress>-<votingEscrow>  */
     id: Scalars['ID'];
     /**  Amount of B-80BAL-20WETH BPT the user has locked  */
     lockedBalance: Scalars['BigDecimal'];
-    /**  veBAL decay rate (per second)  */
-    slope: Scalars['BigDecimal'];
-    /**  Timestamp at which the lock was created [seconds]  */
-    timestamp: Scalars['Int'];
     /**  Timestamp at which B-80BAL-20WETH BPT can be unlocked by user [seconds]  */
-    unlockTime: Scalars['BigInt'];
-    /**  Timestamp at which the lcok was created [seconds]. Same as timestamp  */
+    unlockTime?: Maybe<Scalars['BigInt']>;
     updatedAt: Scalars['Int'];
     /**  Reference to User entity  */
     user: User;
@@ -41825,14 +41160,6 @@ type VotingEscrowLock_Filter = {
     /** Filter for the block changed event. */
     _change_block?: InputMaybe<BlockChangedFilter>;
     and?: InputMaybe<Array<InputMaybe<VotingEscrowLock_Filter>>>;
-    bias?: InputMaybe<Scalars['BigDecimal']>;
-    bias_gt?: InputMaybe<Scalars['BigDecimal']>;
-    bias_gte?: InputMaybe<Scalars['BigDecimal']>;
-    bias_in?: InputMaybe<Array<Scalars['BigDecimal']>>;
-    bias_lt?: InputMaybe<Scalars['BigDecimal']>;
-    bias_lte?: InputMaybe<Scalars['BigDecimal']>;
-    bias_not?: InputMaybe<Scalars['BigDecimal']>;
-    bias_not_in?: InputMaybe<Array<Scalars['BigDecimal']>>;
     id?: InputMaybe<Scalars['ID']>;
     id_gt?: InputMaybe<Scalars['ID']>;
     id_gte?: InputMaybe<Scalars['ID']>;
@@ -41850,22 +41177,6 @@ type VotingEscrowLock_Filter = {
     lockedBalance_not?: InputMaybe<Scalars['BigDecimal']>;
     lockedBalance_not_in?: InputMaybe<Array<Scalars['BigDecimal']>>;
     or?: InputMaybe<Array<InputMaybe<VotingEscrowLock_Filter>>>;
-    slope?: InputMaybe<Scalars['BigDecimal']>;
-    slope_gt?: InputMaybe<Scalars['BigDecimal']>;
-    slope_gte?: InputMaybe<Scalars['BigDecimal']>;
-    slope_in?: InputMaybe<Array<Scalars['BigDecimal']>>;
-    slope_lt?: InputMaybe<Scalars['BigDecimal']>;
-    slope_lte?: InputMaybe<Scalars['BigDecimal']>;
-    slope_not?: InputMaybe<Scalars['BigDecimal']>;
-    slope_not_in?: InputMaybe<Array<Scalars['BigDecimal']>>;
-    timestamp?: InputMaybe<Scalars['Int']>;
-    timestamp_gt?: InputMaybe<Scalars['Int']>;
-    timestamp_gte?: InputMaybe<Scalars['Int']>;
-    timestamp_in?: InputMaybe<Array<Scalars['Int']>>;
-    timestamp_lt?: InputMaybe<Scalars['Int']>;
-    timestamp_lte?: InputMaybe<Scalars['Int']>;
-    timestamp_not?: InputMaybe<Scalars['Int']>;
-    timestamp_not_in?: InputMaybe<Array<Scalars['Int']>>;
     unlockTime?: InputMaybe<Scalars['BigInt']>;
     unlockTime_gt?: InputMaybe<Scalars['BigInt']>;
     unlockTime_gte?: InputMaybe<Scalars['BigInt']>;
@@ -41938,7 +41249,6 @@ type VotingEscrow_Filter = {
     id_not?: InputMaybe<Scalars['ID']>;
     id_not_in?: InputMaybe<Array<Scalars['ID']>>;
     locks_?: InputMaybe<VotingEscrowLock_Filter>;
-    omniLocks_?: InputMaybe<OmniVotingEscrowLock_Filter>;
     or?: InputMaybe<Array<InputMaybe<VotingEscrow_Filter>>>;
     stakedSupply?: InputMaybe<Scalars['BigDecimal']>;
     stakedSupply_gt?: InputMaybe<Scalars['BigDecimal']>;
