@@ -52,28 +52,25 @@ export class CoingeckoPriceRepository implements Findable<Price> {
       const chunk = chunks[i];
       const repsonse = await axios
         .get<TokenPrices>(this.url(chunk), { signal })
-        .then(({ data }) => {
-          return data;
-        })
+        .then(({ data }) => data)
         .catch((error) => {
           const message = ['Error fetching token prices from coingecko'];
           if (error.isAxiosError) {
             if (error.response?.status) {
-              message.push(`with status ${error.response.status}`);
+              message.push(
+                `with status ${error.response.status}, for chunk ${i}`
+              );
             }
           } else {
             message.push(error);
           }
           return Promise.reject(message.join(' '));
-        })
-        .finally(() => {
-          console.timeEnd(`fetching coingecko for ${addresses.length} tokens`);
         });
 
       result = { ...result, ...repsonse };
 
       if (i < chunks.length - 1) {
-        await wait(200);
+        await wait(1_000);
       }
     }
 
