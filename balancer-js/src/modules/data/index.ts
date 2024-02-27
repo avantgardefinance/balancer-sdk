@@ -75,7 +75,8 @@ export class Data implements BalancerDataRepositories {
     networkConfig: BalancerNetworkConfig,
     provider: Provider,
     contracts: Contracts,
-    subgraphQuery?: GraphQLQuery
+    subgraphQuery?: GraphQLQuery,
+    coingeckoTokenAddresses?: string[]
   ) {
     this.pools = new PoolsSubgraphRepository({
       url: networkConfig.urls.subgraph,
@@ -160,9 +161,11 @@ export class Data implements BalancerDataRepositories {
       });
     }
 
-    const tokenAddresses = initialCoingeckoList
-      .filter((t) => t.chainId == networkConfig.chainId)
-      .map((t) => t.address);
+    const tokenAddresses =
+      coingeckoTokenAddresses ??
+      initialCoingeckoList
+        .filter((t) => t.chainId == networkConfig.chainId)
+        .map((t) => t.address);
 
     const coingeckoRepository = new CoingeckoPriceRepository(
       tokenAddresses,

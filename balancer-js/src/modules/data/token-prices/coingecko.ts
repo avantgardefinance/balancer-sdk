@@ -13,10 +13,6 @@ function splitIntoChunks<TItem>(items: TItem[]): TItem[][] {
   return chunks;
 }
 
-function wait(ms: number) {
-  return new Promise((resolve) => setTimeout(resolve, ms));
-}
-
 /**
  * Simple coingecko price source implementation. Configurable by network and token addresses.
  */
@@ -46,32 +42,38 @@ export class CoingeckoPriceRepository implements Findable<Price> {
 
     const chunks = splitIntoChunks(addresses);
 
+    const response = await Promise.all(
+      chunks.map((chunk) =>
+        axios
+          .get<TokenPrices>(this.url(chunk), { signal })
+          .then(({ data }) => {
+            return data;
+          })
+          .catch((error) => {
+            const message = ['Error fetching token prices from coingecko'];
+            if (error.isAxiosError) {
+              if (error.response?.status) {
+                message.push(
+                  `with status ${error.response.status}, all addresses ${addresses.length}`
+                );
+              }
+            } else {
+              message.push(error);
+            }
+            return Promise.reject(message.join(' '));
+          })
+          .finally(() => {
+            console.timeEnd(
+              `fetching coingecko for ${addresses.length} tokens`
+            );
+          })
+      )
+    );
+
     let result: TokenPrices = {};
 
-    for (let i = 0; i < chunks.length; i++) {
-      const chunk = chunks[i];
-      const repsonse = await axios
-        .get<TokenPrices>(this.url(chunk), { signal })
-        .then(({ data }) => data)
-        .catch((error) => {
-          const message = ['Error fetching token prices from coingecko'];
-          if (error.isAxiosError) {
-            if (error.response?.status) {
-              message.push(
-                `with status ${error.response.status}, for chunk ${i}`
-              );
-            }
-          } else {
-            message.push(error);
-          }
-          return Promise.reject(message.join(' '));
-        });
-
-      result = { ...result, ...repsonse };
-
-      if (i < chunks.length - 1) {
-        await wait(1_000);
-      }
+    for (const chunk of response) {
+      result = { ...result, ...chunk };
     }
 
     return result;
