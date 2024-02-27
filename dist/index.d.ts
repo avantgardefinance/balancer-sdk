@@ -42578,7 +42578,7 @@ declare class Data implements BalancerDataRepositories {
     blockNumbers: BlockNumberRepository | undefined;
     poolJoinExits: PoolJoinExitRepository;
     gyroConfigRepository: GyroConfigRepositoryImpl | undefined;
-    constructor(networkConfig: BalancerNetworkConfig, provider: Provider, contracts: Contracts, subgraphQuery?: GraphQLQuery);
+    constructor(networkConfig: BalancerNetworkConfig, provider: Provider, contracts: Contracts, subgraphQuery?: GraphQLQuery, coingeckoTokenAddresses?: string[]);
 }
 
 declare class BalancerAPIArgsFormatter implements GraphQLArgsFormatter {
@@ -42779,6 +42779,7 @@ interface BalancerSdkConfig {
     subgraphQuery?: GraphQLQuery;
     sor?: Partial<BalancerSdkSorConfig>;
     tenderly?: BalancerTenderlyConfig;
+    coingeckoTokenAddresses?: string[];
     enableLogging?: boolean;
 }
 interface BalancerTenderlyConfig {
