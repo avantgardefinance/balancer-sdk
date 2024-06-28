@@ -54,7 +54,7 @@ export class CoingeckoPriceRepository implements Findable<Price> {
             if (error.isAxiosError) {
               if (error.response?.status) {
                 message.push(
-                  `with status ${error.response.status}, all addresses ${addresses.length}`
+                  `with status ${error.response.status}, all addresses ${addresses.length}, message: ${error.message}, \nerror: ${error}`
                 );
               }
             } else {
